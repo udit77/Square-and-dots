@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType = "centerCrop"
+        android:src="@drawable/background"
+        android:id="@+id/background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.7"
+            android:weightSum="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|bottom"
+                    android:id="@+id/header"
+                    android:textColor="@color/menuColor_0"
+                    android:textSize="@dimen/game_over_large"
+                    android:layout_weight="0.4"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/game_over_large"
+                    android:id="@+id/winner"
+                    android:layout_weight="0.6"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.3"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Final Score"
+                android:id="@+id/final_score"
+                android:textSize="@dimen/game_menu"
+                android:textColor="@color/menuColor_0"
+                android:layout_weight="0.4"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.2"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.5"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/player1"
+                        android:textColor="@color/menuColor_1"
+                        android:textSize="@dimen/game_menu"
+                        android:layout_weight="0.5"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/firstScore"
+                        android:textColor="@color/menuColor_1"
+                        android:textSize="@dimen/game_menu"
+                        android:layout_weight="0.5"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.5"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/player2"
+                        android:textColor="@color/menuColor_2"
+                        android:textSize="@dimen/game_menu"
+                        android:layout_weight="0.5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/secondScore"
+                        android:textColor="@color/menuColor_2"
+                        android:textSize="@dimen/game_menu"
+                        android:layout_weight="0.5"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.4"
+                android:weightSum="1">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/replay"
+                        android:textColor="@android:color/white"
+                        android:text="Replay"
+                        android:background="@null"
+                        android:textSize="@dimen/page_details_play_button"
+                        android:gravity="center"
+                        android:layout_weight="0.5"/>
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/goMenu"
+                        android:textColor="@android:color/white"
+                        android:text="Menu"
+                        android:background="@null"
+                        android:textSize="@dimen/page_details_play_button"
+                        android:gravity="center"
+                        android:layout_weight="0.5"/>/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

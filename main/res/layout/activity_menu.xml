@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType = "centerCrop"
+        android:id="@+id/background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.40"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/single_player"
+                    android:textColor="@color/menu_color_0"
+                    android:textSize="@dimen/game_menu"
+                    android:text="@string/menu_single_player"
+                    android:layout_weight="0.25"
+                    android:clickable="true"
+                    android:gravity="center">
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/multi_player"
+                    android:textColor="@color/menu_color_1"
+                    android:textSize="@dimen/game_menu"
+                    android:text="@string/menu_multi_player"
+                    android:clickable="true"
+                    android:layout_weight="0.25"
+                    android:gravity="center">
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scores"
+                    android:text="@string/menu_scores"
+                    android:textColor="@color/menu_color_0"
+                    android:textSize="@dimen/game_menu"
+                    android:layout_weight="0.25"
+                    android:clickable="true"
+                    android:gravity="center">
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tutorial"
+                    android:text="@string/menu_tutorials"
+                    android:textColor="@color/menu_color_1"
+                    android:textSize="@dimen/game_menu"
+                    android:layout_weight="0.25"
+                    android:clickable="true"
+                    android:gravity="center">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.40"></LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

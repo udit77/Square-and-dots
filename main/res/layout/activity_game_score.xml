@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:id="@+id/imageView"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Single Player"
+                android:id="@+id/header_single"
+                android:gravity="center"
+                android:textSize="@dimen/page_details_header"
+                android:textColor="@color/menuColor_0"
+                android:layout_weight="0.7"/>
+
+            <ListView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/firstListView"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_weight="0.3">
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Multi Player"
+                android:id="@+id/header_multi"
+                android:gravity="center"
+                android:textSize="@dimen/page_details_header"
+                android:textColor="@color/menuColor_0"
+                android:layout_weight="0.7"/>
+
+            <ListView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/secondListView"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_weight="0.3">
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

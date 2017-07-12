@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SquareGame</string>
+    <string name="menu_single_player">Single Player</string>
+    <string name="menu_multi_player">Multi Player</string>
+    <string name="menu_scores">Scores</string>
+    <string name="menu_tutorials">Tutorials</string>
+    <string name="title_activity_game_over">GameOver</string>
+    <string name="title_activity_game_score">GameScore</string>
+    <string name="title_activity_tutorial">Tutorial</string>
+</resources>
